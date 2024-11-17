@@ -33,24 +33,23 @@ const SurveyScreen = () => {
     if (currentQuestion > 0) setCurrentQuestion(currentQuestion - 1);
   };
 
-  const handleSkip = () => {
-    handleNext();
-  };
-
   return (
     <div className="survey">
-             <h1>Customer Survey</h1>
+      <h1>Customer Survey</h1>
       <h2>Question {currentQuestion + 1}/{initialQuestions.length}</h2>
       <p>{initialQuestions[currentQuestion].text}</p>
       {initialQuestions[currentQuestion].type === "rating" && (
         <div className="rating-container">
           {[...Array(initialQuestions[currentQuestion].scale)].map((_, index) => (
-            <label key={index} className={`rating-circle ${responses[initialQuestions[currentQuestion].id] === index + 1 ? "selected" : ""}`}>
+            <label
+              key={index}
+              className={`rating-circle ${responses[initialQuestions[currentQuestion].id] === index + 1 ? "selected" : ""}`}
+            >
               <input
                 type="radio"
                 name={initialQuestions[currentQuestion].id}
                 value={index + 1}
-                onChange={(e) => handleAnswer(e.target.value)}
+                onChange={(e) => handleAnswer(Number(e.target.value))}
                 className="rating-input"
               />
               {index + 1}
@@ -59,11 +58,13 @@ const SurveyScreen = () => {
         </div>
       )}
       {initialQuestions[currentQuestion].type === "text" && (
-        <textarea onChange={(e) => handleAnswer(e.target.value)}></textarea>
+        <textarea
+          value={responses[initialQuestions[currentQuestion].id] || ""}
+          onChange={(e) => handleAnswer(e.target.value)}
+        ></textarea>
       )}
       <div className="button-container">
         <button onClick={handlePrevious} disabled={currentQuestion === 0}>Previous</button>
-        {/* <button onClick={handleSkip}>Skip</button> */}
         <button onClick={handleNext}>Next</button>
       </div>
     </div>

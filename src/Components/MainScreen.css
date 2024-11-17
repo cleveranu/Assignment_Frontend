@@ -1,11 +1,11 @@
 
 .survey {
-  height: 100vh; 
+  height: 100vh;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
-  align-items: center; 
-  background: linear-gradient(135deg, #6f5fff, #feb47b); 
+  align-items: center;
+  background: linear-gradient(135deg, #6f5fff, #feb47b);
   font-family: 'Arial', sans-serif;
   color: white;
   text-align: center;
@@ -15,51 +15,54 @@
 
 
 h1 {
-    color: black;
-    font-size: 2rem; 
-    text-align: center;
-    margin-bottom: 25px; 
-  }
-  
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
 .survey h2 {
-  font-size: 2rem; 
-  margin-bottom: 20px; 
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); 
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .survey p {
-  font-size: 1.5rem; 
-  margin-bottom: 30px; 
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
 .survey input,
 .survey textarea {
-  width: 80%; 
+  width: 80%;
   padding: 10px;
-  font-size: 1rem; 
+  font-size: 1rem;
   border: none;
   border-radius: 5px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   outline: none;
 }
 
+
 .survey textarea {
-  resize: none; 
+  resize: none;
   height: 100px;
 }
 
+
 .survey .rating-container {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   gap: 15px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .survey .rating-circle {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background-color: #fff;
   color: #ff7e5f;
   text-align: center;
@@ -72,47 +75,52 @@ h1 {
 .survey .rating-circle:hover {
   background-color: #ff7e5f;
   color: white;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
+
 .survey .rating-circle.selected {
-  background-color: #ff7e5f; 
+  background-color: #ff7e5f;
   color: white;
 }
 
+
 .survey .rating-input {
-  display: none; 
+  display: none;
 }
 
+
 .survey .button-container {
-  display: flex; 
+  display: flex;
   justify-content: center;
   gap: 15px;
 }
+
 
 .survey button {
   padding: 10px 20px;
   font-size: 1.2rem;
   color: white;
-  background: #a011cb; 
+  background: #a011cb;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+
 .survey button:hover {
-  background: #fc25bb; 
-  transform: scale(1.05); 
+  background: #fc25bb;
+  transform: scale(1.05);
 }
+
 
 .survey button:disabled {
   background: #aaa;
   cursor: not-allowed;
   transform: none;
 }
-
 .survey button:active {
   transform: scale(0.95);
 }
