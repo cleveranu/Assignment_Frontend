@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, white, rgb(195, 194, 194));
+}
+
+.color-picker-title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+.app_colorpicker_container {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  min-height: 500px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
