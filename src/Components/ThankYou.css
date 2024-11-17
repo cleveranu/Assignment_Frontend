@@ -1,23 +1,22 @@
-/* ThankYouScreen.css */
+
 .thank-you {
-    height: 100vh; /* Full screen height */
+    height: 100vh;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Gradient background (inverted from WelcomeScreen) */
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(135deg, #2575fc, #6a11cb); 
     font-family: 'Arial', sans-serif;
     color: white;
     text-align: center;
-    animation: fadeInBackground 5s infinite alternate; /* Subtle gradient animation */
+    animation: fadeInBackground 5s infinite alternate; 
   }
   
   .thank-you h1 {
-    font-size: 2.5rem; /* Heading size */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
-    animation: popIn 2s ease-out; /* Heading animation */
+    font-size: 2.5rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    animation: popIn 2s ease-out; 
   }
   
-  /* Keyframes for subtle gradient animation */
   @keyframes fadeInBackground {
     0% {
       background: linear-gradient(135deg, #2575fc, #6a11cb);
@@ -27,7 +26,7 @@
     }
   }
   
-  /* Keyframes for text pop-in effect */
+ 
   @keyframes popIn {
     0% {
       opacity: 0;

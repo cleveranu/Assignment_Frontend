@@ -1,72 +1,53 @@
-<img width="956" alt="Color picker" src="https://github.com/SaumyaaPrajapat/Color-Picker/assets/103128269/60533ab7-efb6-4b92-90e7-c8f79c7c91ff">
+Customer Survey Application
+This is a customer survey application where users are asked a series of questions, and their responses are saved in localStorage. The survey can be navigated with next and previous buttons, and users can skip questions if they wish. Upon completion of the survey, a confirmation dialog asks the user to submit their responses, and a "Thank You" screen is displayed.
 
-# Getting Started with Create React App
+Features:
+Users can answer multiple questions with different types (rating and text).
+Responses are saved in localStorage with unique identifiers for each question.
+Users can navigate between questions using "Previous" and "Next" buttons.
+Users can skip questions if they prefer.
+A session ID is generated for each user to track responses.
+On survey completion, users are asked for confirmation to submit their responses.
+A "Thank You" screen is shown at the end of the survey.
+The application can dynamically handle the addition of new questions.
+Usage
+Survey Flow:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The user is greeted with a Welcome Screen and can start the survey by clicking the Start button.
+The survey consists of a set of questions, and the user can navigate between questions.
+The user can skip a question or go back to previous ones.
+After completing the survey, the user is asked to confirm submission.
+Once confirmed, the survey is marked as COMPLETED in localStorage, and a "Thank You" message is displayed.
+How to View Responses:
 
-## Available Scripts
+Open your browser’s Developer Tools (Ctrl + Shift + I or F12).
+Go to the Application tab and under Local Storage, find your domain.
+You will see keys like answer-sessionId-questionId where the answers are stored.
+You can also use the console to read the stored data with localStorage.getItem('your-key').
+Project Structure
+bash
+Copy code
+/survey-app
+|-- /public
+|   |-- index.html            # Main HTML file
+|-- /src
+|   |-- /components
+|   |   |-- SurveyScreen.js    # Main Survey screen component
+|   |   |-- WelcomeScreen.js   # Welcome screen before the survey starts
+|   |-- /assets
+|   |   |-- MainScreen.css     # CSS styles for the survey screens
+|   |-- App.js                # Main React component for routing
+|   |-- index.js              # Entry point for React app
+|-- package.json              # Project metadata and dependencies
+|-- README.md                 # Project documentation (this file)
+Technology Stack
+Frontend:
 
-In the project directory, you can run:
+React.js (for building UI components)
+React Router (for navigation)
+localStorage (for storing answers and session data)
+CSS (for styling)
+Backend (Optional for future enhancements):
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Node.js/Express (for handling requests and saving data to a database)
+MongoDB or MySQL (for storing survey data in a backend database)

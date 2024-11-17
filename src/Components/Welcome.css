@@ -1,41 +1,41 @@
-/* WelcomeScreen.css */
+
 .welcome {
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
-    flex-direction: column; /* Stack heading and button */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     font-family: 'Arial', sans-serif;
     color: white;
     text-align: center;
   }
   
   .welcome h1 {
-    font-size: 2.5rem; /* Heading size */
-    margin-bottom: 20px; /* Space below heading */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   .welcome button {
-    padding: 10px 20px; /* Button padding */
-    font-size: 1.2rem; /* Button text size */
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
     color: #fff;
-    background: #ff7e5f; /* Button color */
+    background: #ff7e5f;
     border: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
     cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: all 0.3s ease-in-out; /* Smooth hover animation */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out; 
   }
   
   .welcome button:hover {
-    background: #feb47b; /* Lighter button color on hover */
-    transform: scale(1.05); /* Slightly enlarge button */
+    background: #feb47b;
+    transform: scale(1.05); 
   }
   
   .welcome button:active {
-    background: #ff5a36; /* Darker color on click */
-    transform: scale(1); /* Reset scaling */
+    background: #ff5a36; 
+    transform: scale(1); 
   }
   

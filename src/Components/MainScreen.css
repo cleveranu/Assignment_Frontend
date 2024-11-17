@@ -1,66 +1,65 @@
-/* SurveyScreen.css */
+
 .survey {
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  background: linear-gradient(135deg, #6f5fff, #feb47b); /* Gradient background */
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  background: linear-gradient(135deg, #6f5fff, #feb47b); 
   font-family: 'Arial', sans-serif;
   color: white;
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
 }
-/* MainScreen.css */
+
 
 h1 {
     color: black;
-    font-size: 2rem; /* You can adjust the font size as needed */
-    text-align: center; /* Center the heading */
-    margin-bottom: 25px; /* Add some space below the heading */
+    font-size: 2rem; 
+    text-align: center;
+    margin-bottom: 25px; 
   }
   
 .survey h2 {
-  font-size: 2rem; /* Adjust heading size */
-  margin-bottom: 20px; /* Space below the question number */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+  font-size: 2rem; 
+  margin-bottom: 20px; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); 
 }
 
 .survey p {
-  font-size: 1.5rem; /* Question text size */
-  margin-bottom: 30px; /* Space below the question text */
+  font-size: 1.5rem; 
+  margin-bottom: 30px; 
 }
 
 .survey input,
 .survey textarea {
-  width: 80%; /* Responsive width */
+  width: 80%; 
   padding: 10px;
-  font-size: 1rem; /* Input text size */
+  font-size: 1rem; 
   border: none;
   border-radius: 5px;
-  margin-bottom: 20px; /* Space below inputs */
+  margin-bottom: 20px; 
   outline: none;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .survey textarea {
-  resize: none; /* Prevent resizing */
-  height: 100px; /* Default height */
+  resize: none; 
+  height: 100px;
 }
 
 .survey .rating-container {
-  display: flex; /* Align rating circles horizontally */
-  justify-content: center; /* Center rating options */
-  gap: 15px; /* Space between each circle */
-  margin-bottom: 30px; /* Space below rating options */
+  display: flex; 
+  justify-content: center; 
+  gap: 15px;
+  margin-bottom: 30px; 
 }
 
 .survey .rating-circle {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* Circle shape */
+  border-radius: 50%; 
   background-color: #fff;
   color: #ff7e5f;
   text-align: center;
@@ -73,48 +72,47 @@ h1 {
 .survey .rating-circle:hover {
   background-color: #ff7e5f;
   color: white;
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1); 
 }
 
 .survey .rating-circle.selected {
-  background-color: #ff7e5f; /* Highlight selected circle */
+  background-color: #ff7e5f; 
   color: white;
 }
 
 .survey .rating-input {
-  display: none; /* Hide the actual radio buttons */
+  display: none; 
 }
 
 .survey .button-container {
-  display: flex; /* Align buttons in a row */
-  justify-content: center; /* Center buttons */
-  gap: 15px; /* Space between buttons */
-  margin-top: 20px; /* Space above the button row */
+  display: flex; 
+  justify-content: center;
+  gap: 15px;
 }
 
 .survey button {
   padding: 10px 20px;
   font-size: 1.2rem;
   color: white;
-  background: #a011cb; /* Button background color */
+  background: #a011cb; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .survey button:hover {
-  background: #fc25bb; /* Lighter color on hover */
-  transform: scale(1.05); /* Slight scaling */
+  background: #fc25bb; 
+  transform: scale(1.05); 
 }
 
 .survey button:disabled {
-  background: #aaa; /* Disabled button color */
+  background: #aaa;
   cursor: not-allowed;
   transform: none;
 }
 
 .survey button:active {
-  transform: scale(0.95); /* Slight shrink on click */
+  transform: scale(0.95);
 }
